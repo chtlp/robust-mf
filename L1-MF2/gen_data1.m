@@ -1,5 +1,5 @@
-m = 100;
-n = 90;
+m = 1000;
+n = 900;
 k = 6;
 
 % U-star, V-star, M-star

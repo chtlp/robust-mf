@@ -5,13 +5,21 @@ function U1 = comp_U_from_V(U, V, M, W, opt)
 assert( all([m,n] == size(M) &  [m, n] == size(W)) );
 
 U1 = zeros(m, k);
+
+nline=0;
 for i = 1:m
     w = W(i,:);
     A = V(w,:);
     b = M(i,w)';
     x = comp_x_from_Ab(A, b);
     U1(i,:) = x;
+
+    msg = sprintf('i = %d', i);
+    fprintf(repmat('\b',1,nline));
+    fprintf(msg);
+    nline=numel(msg);
 end
+fprintf('\n');
 
 end
 

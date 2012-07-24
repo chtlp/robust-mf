@@ -40,9 +40,9 @@ for iter = 1:20
     a1 = a1 + mu * (s1 + UV - M - T);
     a2 = a2 + mu * (s2 + M - UV - T);
 
-    if iter == 10
-        mu = mu * 5;
-    end
+    % if iter == 10
+    %     mu = mu * 5;
+    % end
     
 end
 

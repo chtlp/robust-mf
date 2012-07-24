@@ -1,6 +1,6 @@
-m = 100;
-n = 90;
-k = 6;
+m = 500;
+n = 450;
+k = 4;
 
 % U-star, V-star, M-star
 Us = rand(m, k);
